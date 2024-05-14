@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+  <link rel="shortcut icon" type="x-icon" href="logo.png">
+  <link href="https://icons8.com/icon/ce0AcdVGFCm2/edit">
+  <!-- fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+     <!-- Flowbite cdn link -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/motion-tailwind.css" rel="stylesheet">
+</head>
+<body>
+
+
+  <!-- Navbar -->
+  <!--   <header class="text-gray-400 bg-gray-900 body-font">
+        <nav class="flex justify-between items-center w-[92%] py-3 mx-auto">
+            <div>
+           <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">Hotel Booking</span>
+    </a>
+       </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-gray-900 md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5 z-50">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Rooms & Rates</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Rooms Gallery</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">My Account</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="bg-red-500 text-white px-3 py-2 md:px-3 rounded-full hover:bg-red-600">Book Now</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+            </header>
+          -->
+
+
+<section class="bg-gray-900 text-gray-400">
+<nav class="border-gray-200 bg-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 md:p4">
+   <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg> -->
+      <img src="https://www.easiui.com/logo.png" class="w-8 h-8 md:h-10 md:w-10 object-cover object-center justify-center">
+      <span class="ml-1 text-[14px] md:text-xl">Hotel Booking</span>
+    </a>
+  <div class="flex md:order-2 gap-1 md:gap-3">
+    <!-- <button class="bg-red-500 text-white px-3 py-2 md:px-3 rounded-full hover:bg-red-600">Book Now</button> -->
+    <div>
+<div class="relative">
+<button type="button" class="text-white relative bg-gradient-to-r from-red-400 via-red-600 to-red-800 w-24 h-9 rounded-xl hover:bg-gradient-to-br focus:outline-none font-medium rounded-lg text-sm py-2.5 text-center flex items-center justify-center">
+<span>
+</span>
+<p>Book Now</p>
+</button>
+<div class="absolute -top-2 -right-1">
+<span class="relative flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75">
+</span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-red-600">
+</span>
+</span>
+</div>
+</div>
+</button>
+</div>
+    <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-900 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-800 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5 me-1">
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+      </svg>
+      <span class="sr-only">Search</span>
+    </button>
+    <div class="relative hidden md:block">
+      <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400 animate-bounce" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+        </svg>
+        <span class="sr-only">Search icon</span>
+      </div>
+      <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+    </div>
+<nav x-data="{ open: false }">
+    <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false" @click="open = !open">
+        <span class="sr-only">Open main menu</span>
+        <div class="block w-5">
+                    <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                    <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+                    <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+                </div>
+
+       <!--  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg> -->
+    </button>
+  </nav>
+  </div>
+
+  <!-- Drop down menu -->
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+      <div class="relative mt-3 md:hidden">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+          </svg>
+        </div>
+        <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-300 border border-gray-300 rounded-lg bg-gray-800 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-200 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+      </div>
+      <ul class="flex flex-col p-2 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-900 md:space-x-1 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-900 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+         <!--  <a href="#" class="flex items-center gap-2 p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group" aria-current="page"><i class="fa fa-home" aria-hidden="true"></i>Home</a> -->
+
+         <a href="index.html"> <div class="relative z-20 flex gap-2 p-2 items-start left-1 md:left-2 max-w-full md:w-[6rem] h-10 hover:bg-gray-100 dark:hover:bg-gray-700 group text-gray-400 rounded-lg flex"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21" strokeWidth={1.5} stroke="currentColor"class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" aria-hidden="true">
+  <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+</svg>Home<div class="absolute  top-10 left-0  w-full h-auto bg-transparent rounded-l-lg">
+
+</div>
+</div>
+</a>
+        </li>
+       
+        <li>
+            <!-- <button type="button" class="flex items-center w-full p-2 text-base text-gray-400 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                  <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
+                     <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
+                  </svg>
+                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Rooms & Rates</span>
+                  <svg class="w-3 h-3 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                  </svg>
+            </button>
+             -->
+            
+<button type="button" id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" class="flex items-center w-full p-2 text-base text-gray-400 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                  <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
+                     <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
+                  </svg>
+                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Rooms & Rates</span>
+                  <svg class="w-3 h-3 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                  </svg>
+            </button>
+
+<!-- Dropdown menu -->
+<div id="multi-dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="multiLevelDropdownButton">
+      <li>
+        <a href="Rooms and Rates.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Rooms & Rates</a>
+      </li>
+      <li>
+        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Features<svg class="w-2.5 h-2.5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+  </svg></button>
+          <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Gallery</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Billing</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Rewards</a>
+              </li>
+            </ul>
+        </div>
+      </li>
+      <li>
+        <a href="About.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Services</a>
+      </li>
+    </ul>
+</div>    
+              
+         </li>
+         
+         
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                  <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Rooms Gallery</span>
+            </a>
+         </li>
+
+         <li>
+          <button type="button" id="mega-menu-icons-dropdown-button" data-dropdown-toggle="mega-menu-icons-dropdown" class="flex items-center w-full p-2 text-base text-gray-400 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                   <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                  <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/>
+               </svg>
+                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Services</span>
+                  <svg class="w-3 h-3 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                  </svg>
+            </button>
+                    <div id="mega-menu-icons-dropdown" class="absolute z-10 grid hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700">
+                        <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                            <ul class="space-y-4" aria-labelledby="mega-menu-icons-dropdown-button">
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                        <span class="sr-only">About us</span>
+                                        <svg class="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                                        </svg>
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                        <span class="sr-only">Library</span>
+                                        <svg class="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="m1.56 6.245 8 3.924a1 1 0 0 0 .88 0l8-3.924a1 1 0 0 0 0-1.8l-8-3.925a1 1 0 0 0-.88 0l-8 3.925a1 1 0 0 0 0 1.8Z"/>
+                                            <path d="M18 8.376a1 1 0 0 0-1 1v.163l-7 3.434-7-3.434v-.163a1 1 0 0 0-2 0v.786a1 1 0 0 0 .56.9l8 3.925a1 1 0 0 0 .88 0l8-3.925a1 1 0 0 0 .56-.9v-.786a1 1 0 0 0-1-1Z"/>
+                                            <path d="M17.993 13.191a1 1 0 0 0-1 1v.163l-7 3.435-7-3.435v-.163a1 1 0 1 0-2 0v.787a1 1 0 0 0 .56.9l8 3.925a1 1 0 0 0 .88 0l8-3.925a1 1 0 0 0 .56-.9v-.787a1 1 0 0 0-1-1Z"/>
+                                        </svg>
+                                        Library
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                        <span class="sr-only">Resources</span>
+                                        <svg class="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                                            <path d="M15.977.783A1 1 0 0 0 15 0H3a1 1 0 0 0-.977.783L.2 9h4.239a2.99 2.99 0 0 1 2.742 1.8 1.977 1.977 0 0 0 3.638 0A2.99 2.99 0 0 1 13.561 9H17.8L15.977.783ZM6 2h6a1 1 0 1 1 0 2H6a1 1 0 0 1 0-2Zm7 5H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Z"/>
+                                            <path d="M1 18h16a1 1 0 0 0 1-1v-6h-4.439a.99.99 0 0 0-.908.6 3.978 3.978 0 0 1-7.306 0 .99.99 0 0 0-.908-.6H0v6a1 1 0 0 0 1 1Z"/>
+                                        </svg>
+                                        Resources
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                        <span class="sr-only">Pro Version</span>
+                                        <svg class="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="m7.164 3.805-4.475.38L.327 6.546a1.114 1.114 0 0 0 .63 1.89l3.2.375 3.007-5.006ZM11.092 15.9l.472 3.14a1.114 1.114 0 0 0 1.89.63l2.36-2.362.38-4.475-5.102 3.067Zm8.617-14.283A1.613 1.613 0 0 0 18.383.291c-1.913-.33-5.811-.736-7.556 1.01-1.98 1.98-6.172 9.491-7.477 11.869a1.1 1.1 0 0 0 .193 1.316l.986.985.985.986a1.1 1.1 0 0 0 1.316.193c2.378-1.3 9.889-5.5 11.869-7.477 1.746-1.745 1.34-5.643 1.01-7.556Zm-3.873 6.268a2.63 2.63 0 1 1-3.72-3.72 2.63 2.63 0 0 1 3.72 3.72Z"/>
+                                        </svg>
+                                        Pro Version
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                            <ul class="space-y-4">
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                        <span class="sr-only">Blog</span>
+                                        <svg class="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M19 4h-1a1 1 0 1 0 0 2v11a1 1 0 0 1-2 0V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a1 1 0 0 0-1-1ZM3 4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4Zm9 13H4a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-3H4a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-3H4a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-3h-2a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2Zm0-3h-2a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2Z"/>
+                                            <path d="M6 5H5v1h1V5Z"/>
+                                        </svg>
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                        <span class="sr-only">Newsletter</span>
+                                        <svg class="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z"/>
+                                        </svg>
+                                        Newsletter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                        <span class="sr-only">Playground</span>
+                                        <svg class="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                                            <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10ZM17 13h-2v-2a1 1 0 0 0-2 0v2h-2a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0v-2h2a1 1 0 0 0 0-2Z"/>
+                                        </svg>
+                                        Playground
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                        <span class="sr-only">License</span>
+                                        <svg class="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 20">
+                                            <path d="M13.383.076a1 1 0 0 0-1.09.217L11 1.586 9.707.293a1 1 0 0 0-1.414 0L7 1.586 5.707.293a1 1 0 0 0-1.414 0L3 1.586 1.707.293A1 1 0 0 0 0 1v18a1 1 0 0 0 1.707.707L3 18.414l1.293 1.293a1 1 0 0 0 1.414 0L7 18.414l1.293 1.293a1 1 0 0 0 1.414 0L11 18.414l1.293 1.293A1 1 0 0 0 14 19V1a1 1 0 0 0-.617-.924ZM10 15H4a1 1 0 1 1 0-2h6a1 1 0 0 1 0 2Zm0-4H4a1 1 0 1 1 0-2h6a1 1 0 1 1 0 2Zm0-4H4a1 1 0 0 1 0-2h6a1 1 0 1 1 0 2Z"/>
+                                        </svg>
+                                        License
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4 text-gray-900 dark:text-white">
+                            <ul class="space-y-4">
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                        <span class="sr-only">Contact Us</span>
+                                        <svg class="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 20">
+                                            <path d="M12 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM7.5 17.5h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2ZM12 13H2V4h10v9Z"/>
+                                        </svg>
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                        <span class="sr-only">Support Center</span>
+                                        <svg class="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 21">
+                                            <path d="m5.4 2.736 3.429 3.429A5.046 5.046 0 0 1 10.134 6c.356.01.71.06 1.056.147l3.41-3.412c.136-.133.287-.248.45-.344A9.889 9.889 0 0 0 10.269 1c-1.87-.041-3.713.44-5.322 1.392a2.3 2.3 0 0 1 .454.344Zm11.45 1.54-.126-.127a.5.5 0 0 0-.706 0l-2.932 2.932c.029.023.049.054.078.077.236.194.454.41.65.645.034.038.078.067.11.107l2.927-2.927a.5.5 0 0 0 0-.707Zm-2.931 9.81c-.024.03-.057.052-.081.082a4.963 4.963 0 0 1-.633.639c-.041.036-.072.083-.115.117l2.927 2.927a.5.5 0 0 0 .707 0l.127-.127a.5.5 0 0 0 0-.707l-2.932-2.931Zm-1.442-4.763a3.036 3.036 0 0 0-1.383-1.1l-.012-.007a2.955 2.955 0 0 0-1-.213H10a2.964 2.964 0 0 0-2.122.893c-.285.29-.509.634-.657 1.013l-.01.016a2.96 2.96 0 0 0-.21 1 2.99 2.99 0 0 0 .489 1.716c.009.014.022.026.032.04a3.04 3.04 0 0 0 1.384 1.1l.012.007c.318.129.657.2 1 .213.392.015.784-.05 1.15-.192.012-.005.02-.013.033-.018a3.011 3.011 0 0 0 1.676-1.7v-.007a2.89 2.89 0 0 0 0-2.207 2.868 2.868 0 0 0-.27-.515c-.007-.012-.02-.025-.03-.039Zm6.137-3.373a2.53 2.53 0 0 1-.35.447L14.84 9.823c.112.428.166.869.16 1.311-.01.356-.06.709-.147 1.054l3.413 3.412c.132.134.249.283.347.444A9.88 9.88 0 0 0 20 11.269a9.912 9.912 0 0 0-1.386-5.319ZM14.6 19.264l-3.421-3.421c-.385.1-.781.152-1.18.157h-.134c-.356-.01-.71-.06-1.056-.147l-3.41 3.412a2.503 2.503 0 0 1-.443.347A9.884 9.884 0 0 0 9.732 21H10a9.9 9.9 0 0 0 5.044-1.388 2.519 2.519 0 0 1-.444-.348ZM1.735 15.6l3.426-3.426a4.608 4.608 0 0 1-.013-2.367L1.735 6.4a2.507 2.507 0 0 1-.35-.447 9.889 9.889 0 0 0 0 10.1c.1-.164.217-.316.35-.453Zm5.101-.758a4.957 4.957 0 0 1-.651-.645c-.033-.038-.077-.067-.11-.107L3.15 17.017a.5.5 0 0 0 0 .707l.127.127a.5.5 0 0 0 .706 0l2.932-2.933c-.03-.018-.05-.053-.078-.076ZM6.08 7.914c.03-.037.07-.063.1-.1.183-.22.384-.423.6-.609.047-.04.082-.092.129-.13L3.983 4.149a.5.5 0 0 0-.707 0l-.127.127a.5.5 0 0 0 0 .707L6.08 7.914Z"/>
+                                        </svg>
+                                        Support Center
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                        <span class="sr-only">Terms</span>
+                                        <svg class="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                                            <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
+                                        </svg>
+                                        Terms
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+          <li>
+            <a href="Accountpage.html" class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                  <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">My Account</span>
+            </a>
+         </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+<!-- About US SECTION -->
+
+<div class="text-center p-8 bg-gray-900">
+    <h2 class="font-bold text-gray-300 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+        About Us
+    </h2>
+
+    <div class="flex flex-wrap items-center mt-20 text-left text-center">
+        <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <img src="https://img.freepik.com/premium-photo/bedroom-with-bed-window-overlooking-city_1209326-72935.jpg?ga=GA1.1.330441366.1694254477&semt=ais" alt="gem" class="inline-block rounded shadow-lg border border-merino-400">
+        </div>
+        <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
+            <h3 class="font-bold text-gray-300 mt-8 text-xl md:mt-0 sm:text-2xl">
+                Simple integration
+            </h3>
+            <p class="sm:text-lg text-gray-400 mt-6">
+                Use the LocaleData gem to download translations directly into your Ruby on Rails
+                projects using the provided command line interface. Just create a project and follow
+                the step-by-step instructions.
+            </p>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap items-center mt-20 text-left text-center">
+        <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <img src="https://img.freepik.com/premium-photo/luxury-bedroom_94574-3591.jpg?ga=GA1.1.330441366.1694254477&semt=ais" alt="project members" class="inline-block rounded shadow-lg border border-merino-400">
+        </div>
+        <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
+            <h3 class="font-bold mt-8 text-xl md:mt-0 text-gray-300 sm:text-2xl">
+                Easy collaboration
+            </h3>
+            <p class="sm:text-lg text-gray-400 mt-6">
+                All LocaleData projects are private. Each project can have multiple collaborators
+                with different roles and access permissions. You determine who can see and edit
+                your translations. Just add admins, developers, translators and configure their
+                access rights.
+            </p>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap items-center mt-20 text-left  text-center">
+        <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <img src="https://img.freepik.com/premium-photo/hotel-room-with-bed-chair_945076-1356.jpg?ga=GA1.1.330441366.1694254477&semt=ais" alt="editor" class="inline-block rounded shadow-lg border border-merino-400">
+        </div>
+        <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
+            <h3 class="font-bold mt-8 text-xl text-gray-300 md:mt-0 sm:text-2xl">
+                No more syntax errors
+            </h3>
+            <p class="sm:text-lg mt-6 text-gray-400">
+                LocaleData provides you easy import/export functions for your YAML files.
+                Use a simple editor with many predefined languages to manage your locales.
+                LocaleData also supports multiple translation types, such as simple text, plural forms,
+                numbers, booleans, symbols, arrays, ...
+            </p>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap items-center mt-20 text-left text-center">
+        <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <img src="https://img.freepik.com/premium-photo/interior-decoration-royal-building-bedroom_136558-57397.jpg?ga=GA1.1.330441366.1694254477&semt=ais" alt="bulk editing" class="inline-block rounded shadow-lg border border-merino-400">
+        </div>
+        <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
+            <h3 class="font-bold mt-8 text-xl md:mt-0 text-gray-300 sm:text-2xl">
+                Bulk editing
+            </h3>
+            <p class="sm:text-lg text-gray-400 mt-6">
+                Do you need to change the path of many translation keys at once? No problem, just
+                use the bulk editing feature and enjoy the results.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Ratings -->
+
+<section class="text-gray-500 body-font bg-gray-900">
+  <div class="container px-5 py-24 mx-auto">
+   
+    <div class="flex flex-wrap -m-4 text-center">
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M8 17l4 4 4-4m-4-5v9"></path>
+            <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-gray-400">2.7K</h2>
+          <p class="leading-relaxed">Downloads</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-gray-400">1.3K</h2>
+          <p class="leading-relaxed">Users</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+            <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-gray-400">74K</h2>
+          <p class="leading-relaxed">Files</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-gray-400">46K</h2>
+          <p class="leading-relaxed">Places</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES section -->
+
+<div class="bg-gray-900">
+
+    <section id="features"
+        class="relative block px-6 py-10 md:py-20 md:px-10  border-t border-b border-neutral-900 bg-gray-900">
+
+
+        <div class="relative mx-auto max-w-5xl text-center">
+            <span class="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
+            Why choose us
+            </span>
+            <h2
+                class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
+                Build a Website That Your Customers Love
+            </h2>
+            <p
+                class="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
+                Our templates allow for maximum customization. No technical skills required – our intuitive design tools
+                let
+                you get the job done easily.
+            </p>
+        </div>
+
+
+        <div class="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+                <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
+                    style="background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240);">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                        <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                        <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                        <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                    </svg>
+                </div>
+                <h3 class="mt-6 text-gray-400">Customizable</h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">Tailor your landing page's
+                    look
+                    and feel, from the color scheme to the font size, to the design of the page.
+                </p>
+            </div>
+
+
+            <div class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+                <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
+                    style="background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240);">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bolt" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3"></polyline>
+                    </svg>
+                </div>
+                <h3 class="mt-6 text-gray-400">Fast Performance</h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">We build our templates for
+                    speed in mind, for super-fast load times so your customers never waver.
+                </p>
+            </div>
+
+
+            <div class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+                <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
+                    style="background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240);">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
+                        <line x1="14.5" y1="5.5" x2="18.5" y2="9.5"></line>
+                        <polyline points="12 8 7 3 3 7 8 12"></polyline>
+                        <line x1="7" y1="8" x2="5.5" y2="9.5"></line>
+                        <polyline points="16 12 21 17 17 21 12 16"></polyline>
+                        <line x1="16" y1="17" x2="14.5" y2="18.5"></line>
+                    </svg>
+                </div>
+                <h3 class="mt-6 text-gray-400">Fully Featured</h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+                    Everything you need to
+                    succeed
+                    and launch your landing page, right out of the box. No need to install anything else.
+                </p>
+            </div>
+
+
+        </div>
+
+        <div class="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b"
+            style="background-image: linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);">
+        </div>
+        <div class="absolute bottom-0 right-0 z-0 h-1/3 w-full"
+            style="background-image: linear-gradient(to left top, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);">
+        </div>
+
+    </section>
+</div>
+
+
+<!-- footer section -->
+
+<footer class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-34 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+       <img src="https://www.easiui.com/logo.png" class="w-10 h-10 text-white p-2 bg-gray-300 rounded-full object-cover object-center justify-center">
+        <span class="ml-3 text-xl">Hotel Booking</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+      <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
+                    <input id="email" type="text" class="px-4 py-2 text-gray-800 bg-gray-800 border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Email Address" />
+            
+                    <button class="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-red-500 rounded-lg hover:bg-red-600 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                        Subscribe
+                    </button>
+                </div>
+    </div>
+     
+    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">About Us</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-400 hover:text-white">About Us</a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white">Careers</a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white">Blog</a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white">Press Room</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Resources</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-400 hover:text-white">Our Work</a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white">Services</a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white">FAQ</a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white">Rooms</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Contact Us</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-400 hover:text-white">About Us</a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white">Menu</a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white">Contact</a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white">Phone No</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Categories</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-400 hover:text-white">Dulex</a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white">Non Dulex</a>
+          </li>
+        </nav>
+      </div>
+      <!-- APP store AND play store app -->
+      <div class="sm:flex sm:items-center sm:justify-between items-center">
+            <div class="flex flex-1 gap-4 hover:cursor-pointer">
+                <img src="https://www.svgrepo.com/show/303139/google-play-badge-logo.svg" width="130" height="110" alt="" />
+                <img src="https://www.svgrepo.com/show/303128/download-on-the-app-store-apple-logo.svg" width="130" height="110" alt="" />
+            </div>
+    </div>
+    </div>
+  </div>
+  <div class="bg-gray-800 bg-opacity-75">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-400 text-sm text-center sm:text-left">© 2024 Hotel Booking —
+        <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" rel="noopener noreferrer" target="_blank">@gmail.com</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+         <div class="flex gap-4 hover:cursor-pointer">
+                <img src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg" width="30" height="30" alt="fb" />
+                <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" width="30" height="30" alt="tw" />
+                <img src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg" width="30" height="30" alt="inst" />
+                <img src="https://www.svgrepo.com/show/94698/github.svg" class="" width="30" height="30" alt="gt" />
+                <img src="https://www.svgrepo.com/show/22037/path.svg" width="30" height="30" alt="pn" />
+                <img src="https://www.svgrepo.com/show/28145/linkedin.svg" width="30" height="30" alt="in" />
+                <img src="https://www.svgrepo.com/show/22048/dribbble.svg" class="" width="30" height="30" alt="db" />
+            </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- JAVASCRIPT FOR NAVBAR -->
+<script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[11%]')
+        }
+    </script>
+
+
+    <!-- Image Slider -->
+  <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+
+  <!-- Image slider -->
+
+  <script type="text/javascript">
+    const carouselElement = document.getElementById('carousel-example');
+
+const items = [
+    {
+        position: 0,
+        el: document.getElementById('carousel-item-1'),
+    },
+    {
+        position: 1,
+        el: document.getElementById('carousel-item-2'),
+    },
+    {
+        position: 2,
+        el: document.getElementById('carousel-item-3'),
+    },
+    {
+        position: 3,
+        el: document.getElementById('carousel-item-4'),
+    },
+];
+
+// options with default values
+const options = {
+    defaultPosition: 1,
+    interval: 3000,
+
+    indicators: {
+        activeClasses: 'bg-white dark:bg-gray-800',
+        inactiveClasses:
+            'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800',
+        items: [
+            {
+                position: 0,
+                el: document.getElementById('carousel-indicator-1'),
+            },
+            {
+                position: 1,
+                el: document.getElementById('carousel-indicator-2'),
+            },
+            {
+                position: 2,
+                el: document.getElementById('carousel-indicator-3'),
+            },
+            {
+                position: 3,
+                el: document.getElementById('carousel-indicator-4'),
+            },
+        ],
+    },
+
+    // callback functions
+    onNext: () => {
+        console.log('next slider item is shown');
+    },
+    onPrev: () => {
+        console.log('previous slider item is shown');
+    },
+    onChange: () => {
+        console.log('new slider item has been shown');
+    },
+};
+
+// instance options object
+const instanceOptions = {
+  id: 'carousel-example',
+  override: true
+};
+  </script>
+
+  <!-- open and close menu 2 -->
+
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+
+<!-- Flowbite USE -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+
+</body>
+</html>
